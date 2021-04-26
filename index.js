@@ -15,7 +15,6 @@ window.onload = () => {
     currentPhotosDiv = document.getElementById("project-gallery").firstElementChild.firstElementChild.children
     currentLinkDiv = document.getElementById("project-links").firstElementChild.children
 
-
     projectItems[0].click()
 }
 
@@ -25,6 +24,7 @@ const changeProject = (event) => {
     changeDescription()
     changeTechnologies()
     changePhotos()
+    changeLinks()
 }
 
 const changeDescription = () => {
@@ -48,16 +48,25 @@ const changePhotos = () => {
 }
 
 const changeLinks = () => {
+
+    if (projects[currentProjectIndex].links.length === 1) {
+        currentLinkDiv[1].classList.add('invisible')
+    }
+
+    if (projects[currentProjectIndex].links.length === 2) {
+        currentLinkDiv[1].classList.remove('invisible')
+    }
     
-    currentLinkDiv[1].firstElementChild.onclick = () => {
+    currentLinkDiv[0].firstElementChild.onclick = () => {
         window.open(projects[currentProjectIndex].links[0])
     }
 
-    currentLinkDiv[2].firstElementChild.onclick = () => {
+    currentLinkDiv[1].firstElementChild.onclick = () => {
         window.open(projects[currentProjectIndex].links[1])
     }
     
 }
+
 
 const addAnimations = (element) => {
     element.addEventListener('mouseover', (event) => {
@@ -87,9 +96,9 @@ const projects = [
             "Javascript", "Node", "Express", "MySQL", "WebRTC", "AWS EC2 and S3", "STUN and TURN servers", "Nginx"
         ],
         photos: [
-            "./photos/videoconference/videoconference.png", "./photos/videoconference/ads.png", "./photos/videoconference/ad.png"
+            "./photos/videoconference/videoconference.png", "./photos/videoconference/teachers_post.png", "./photos/videoconference/sample_post.png"
         ],
-        links: ["https://github.com", "https://lelo.link"]
+        links: ["https://github.com/mwatrak1", "https://lelo.link"]
     },
     {
         description: `Ticketing - microservices - an e-commerce app for selling and buying tickets for any events.
@@ -107,9 +116,9 @@ const projects = [
             "TypeScript", "Docker", "Kubernetes", "NATS", "Node", "Express", "Next.js", "React", "MongoDB", "Redis"
         ],
         photos: [
-            "./photos/", "./photos/", "./photos/"
+            "./photos/ticketing/tickets.png", "./photos/ticketing/payment.png", "./photos/ticketing/orders.png"
         ],
-        links: ["", ""]
+        links: ["https://github.com/mwatrak1"]
     },
     {
         description: `Stock notifications - an app for setting up  and then receiving notifications for when users favorite stock 
@@ -130,7 +139,7 @@ const projects = [
         photos: [
             "./photos/stocks/stock.png", "./photos/stocks/dashboard.png", "./photos/stocks/notification.png"
         ],
-        links: ["", ""]
+        links: ["https://github.com/mwatrak1", "https://stocks-hdzou.ondigitalocean.app/"]
     },
     {
         description: `Automatic recipes schedule -  an app for getting random recipes being delivered to user everyday at the same
@@ -146,6 +155,6 @@ const projects = [
         photos: [
             "./photos/recipes/main.png", "./photos/recipes/dessert.png", "./photos/recipes/soup.jpg"
         ],
-        links: ["", ""]
+        links: ["https://github.com/mwatrak1"]
     }
 ]
