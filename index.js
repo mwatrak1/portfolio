@@ -80,7 +80,7 @@ const addAnimations = (element) => {
 
 const projects = [
     {
-        description: `Video call tutoring app was created by me and my friend as a part of our engineering thesis.
+        description: `Video tutoring app was created by me and my friend as a part of our engineering thesis.
         It is an app that connects students and teachers, allows then to communicate schedule a meeting and most importantly
         participate in an online video call lesson. It focuses on bringing language tutoring to anyone with access to internet 
         with comfort of not having to leave a house. Website makes it possible to learn any language from native speakers
@@ -98,7 +98,7 @@ const projects = [
         photos: [
             "./photos/videoconference/videoconference.png", "./photos/videoconference/teachers_post.png", "./photos/videoconference/sample_post.png"
         ],
-        links: ["https://github.com/mwatrak1", "https://lelo.link"]
+        links: ["https://github.com/mwatrak1/video-tutoring", "https://lelo.link"]
     },
     {
         description: `Ticketing - microservices - an e-commerce app for selling and buying tickets for any events.
@@ -118,28 +118,25 @@ const projects = [
         photos: [
             "./photos/ticketing/tickets.png", "./photos/ticketing/payment.png", "./photos/ticketing/orders.png"
         ],
-        links: ["https://github.com/mwatrak1"]
+        links: ["https://github.com/mwatrak1/ticketing-microservices"]
     },
     {
         description: `Stock notifications - an app for setting up  and then receiving notifications for when users favorite stock 
         price changes accordingly. Users can browse stocks, check the current price, read more about them, see the 
         historical stock data shown as a graph and after registration have the possibility of setting up notifications that are
-        delivered to them using Telegram messages. 
-        
-        To register user must first subscribe to StockNotifications Telegram bot channel and only after then can be 
-        registered - it allows for phone number verification and provides an easy way to send messages afterwards.
+        delivered to them using Whatsapp messages. 
 
         On the dashboard user can check all notifications and see the current progress towards stocks reaching the goal.
         Lambda function in AWS checks for notifications if they reached the goal - if so user is notified by making a request
-        to Telegram API.
+        to Twillio API which sends a Whatsapp message with information about the stock price.
         `,
         technologies: [
-            "Python", "Django", "MongoDB", "AWS Lambda", "Docker", "Telegram API", "Yahoo Finance API"
+            "Python", "Django", "MongoDB", "AWS Lambda", "Docker", "Twillio API", "Yahoo Finance API", "Whatsapp"
         ],
         photos: [
             "./photos/stocks/stock.png", "./photos/stocks/dashboard.png", "./photos/stocks/notification.png"
         ],
-        links: ["https://github.com/mwatrak1", "https://stocks-hdzou.ondigitalocean.app/"]
+        links: ["https://github.com/mwatrak1/stocks", "https://stocks-hdzou.ondigitalocean.app/"]
     },
     {
         description: `Automatic recipes schedule -  an app for getting random recipes being delivered to user everyday at the same
@@ -155,6 +152,6 @@ const projects = [
         photos: [
             "./photos/recipes/main.png", "./photos/recipes/dessert.png", "./photos/recipes/soup.jpg"
         ],
-        links: ["https://github.com/mwatrak1"]
+        links: ["https://github.com/mwatrak1/recipes_newsletter"]
     }
 ]
