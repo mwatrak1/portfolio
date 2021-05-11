@@ -136,7 +136,7 @@ const projects = [
         photos: [
             "./photos/stocks/stock.png", "./photos/stocks/dashboard.png", "./photos/stocks/notification.png"
         ],
-        links: ["https://github.com/mwatrak1/stocks", "https://stocks-hdzou.ondigitalocean.app/"]
+        links: ["https://github.com/mwatrak1/stocks", "https://stocks-notifications-36eo6.ondigitalocean.app/"]
     },
     {
         description: `Automatic recipes schedule -  an app for getting random recipes being delivered to user everyday at the same
