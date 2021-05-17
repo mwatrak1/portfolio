@@ -1,5 +1,6 @@
 const projectItems = []
 var currentProjectIndex, currentDescription, currentTechnologiesDiv, currentPhotosDiv, currentLinkDiv
+var mobileProjectButton = null
 
 window.onload = () => {
     let projectsDiv = document.getElementById("projects-nav")
@@ -15,12 +16,20 @@ window.onload = () => {
     currentPhotosDiv = document.getElementById("project-gallery").firstElementChild.firstElementChild.children
     currentLinkDiv = document.getElementById("project-links").firstElementChild.children
 
+    if (window.innerWidth >= 320 && window.innerWidth <= 1024){
+        mobileProjectButton = document.getElementById('dropdownMenuButton')
+    }
+
     projectItems[0].click()
 }
 
 const changeProject = (event) => {
     currentProjectIndex = projectItems.findIndex((el) => { return event.target === el})
-    console.log(currentProjectIndex)
+
+    if (mobileProjectButton !== null){
+        mobileProjectButton.innerText = projects[currentProjectIndex].name
+    }
+
     changeDescription()
     changeTechnologies()
     changePhotos()
@@ -80,6 +89,7 @@ const addAnimations = (element) => {
 
 const projects = [
     {
+        name: "Video tutoring",
         description: `Video tutoring app was created by me and my friend as a part of our engineering thesis.
         It is an app that connects students and teachers, allows then to communicate schedule a meeting and most importantly
         participate in an online video call lesson. It focuses on bringing language tutoring to anyone with access to internet 
@@ -101,6 +111,7 @@ const projects = [
         links: ["https://github.com/mwatrak1/video-tutoring", "https://lelo.link"]
     },
     {
+        name: "Ticketing - microservices",
         description: `Ticketing - microservices - an e-commerce app for selling and buying tickets for any events.
         It allows registered users to easily publish and offer for selling a particular ticket which is then listed for
         any other logged user to see. If an user decides to buy a ticket it is being reserved for them for 15 minutes - it is
@@ -121,6 +132,7 @@ const projects = [
         links: ["https://github.com/mwatrak1/ticketing-microservices"]
     },
     {
+        name: "Stock notifications",
         description: `Stock notifications - an app for setting up  and then receiving notifications for when users favorite stock 
         price changes accordingly. Users can browse stocks, check the current price, read more about them, see the 
         historical stock data shown as a graph and after registration have the possibility of setting up notifications that are
@@ -139,10 +151,13 @@ const projects = [
         links: ["https://github.com/mwatrak1/stocks", "https://stocks-notifications-36eo6.ondigitalocean.app/"]
     },
     {
-        description: `Automatic recipes schedule -  an app for getting random recipes being delivered to user everyday at the same
+        name: "Random recipes newsletter",
+        description: `Random recipes newsletter - an app for getting random recipes being delivered to user everyday at the same
         time. Recipes are sent as an email - each consists of 5 recipes for different meals and some possible
         alternatives. Everyday user gets recipe for: breakfast, main course, dinner, salad and soup.
         
+        Each recipe contains: ingredients, directions, yield, cooking time, photo and a link to the blog.
+
         All recipes are stored in a database and were previously scraped from most popular food blogs using Python and BeautufulSoup.
         Everyday Google Cloud Function is scheduled to run and generate random recipes for each user.
         `,

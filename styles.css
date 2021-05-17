@@ -4,10 +4,9 @@ body {
 }
 
 footer {
-    height: 5vh;
-    width: 100vw;
     background-color:#5271FF;
 }
+
 #footer-content {
     height: 5vh;
     width: 100vw;
@@ -22,6 +21,10 @@ footer {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #52a2ff !important;
 }
 
 .margin-2 {
@@ -66,6 +69,7 @@ footer {
 #projects {
     height: 100vh;
     color: white;
+    background-color: #52a2ff;
 }
 
 .projects-border {
@@ -91,6 +95,16 @@ footer {
    width: 80vw;
    background-color: #5271FF;
    border-top-left-radius: 50px;
+}
+
+#mobile-nav {
+    display: none;
+    height: 5vh;
+    padding-top: 2%;
+}
+
+#mobile-nav button{
+    background-color: #52a2ff;
 }
 
 .projects-nav-item {
@@ -149,16 +163,91 @@ footer {
 }
 
 #logo {
-    font-size: x-large;
+    font-size: 120%;
 }
 
 .navbar-link {
-    font-size: large;
     color: white;
 }
 
 #home-welcome-text {
     padding-top: 5%;
     margin-left: 10%;
+    margin-right: 5%;
     color: white;
+}
+
+#home-buttons {
+    padding-top: 2%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    h4 {
+        font-size: 120%;
+        font-style: normal;
+    }
+
+    .navbar-link {
+        font-size: 200%;
+    }
+
+    #home-buttons {
+        padding-top: 10%;
+    }
+
+    #home-welcome-text {
+        padding-top: 15%;
+    }
+
+    #projects-content, #projects-element {
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #about-text-container {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    #about-content {
+        font-size: 75%;
+    }
+
+    #about-content h1 {
+        font-size: 4vw;
+    }
+
+    #about-content h5 {
+        font-size: 3vw;
+    }
+
+    article {
+        font-size: 3.3vw;
+    }
+
+    #projects-nav  {
+        display: none;
+    }
+
+    #project-description {
+        height: 70vh;
+    }
+
+    #project-gallery {
+        display: none;
+    }
+
+    #project-technologies h5{
+        font-size: 4.5vw;
+    }
+
+    #project-links button {
+        font-size: 3vw;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+    
 }
