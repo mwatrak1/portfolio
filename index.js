@@ -89,28 +89,6 @@ const addAnimations = (element) => {
 
 const projects = [
     {
-        name: "Video tutoring",
-        description: `Video tutoring app was created by me and my friend as a part of our engineering thesis.
-        It is an app that connects students and teachers, allows then to communicate schedule a meeting and most importantly
-        participate in an online video call lesson. It focuses on bringing language tutoring to anyone with access to internet 
-        with comfort of not having to leave a house. Website makes it possible to learn any language from native speakers
-        who are fluent in their speech and can pass on practical knowledge and rules of correct pronounciation - its the only
-        way of learning from native language users without having to visit the country
-        
-        Common functionalities include: users profile, public forum, private messaging, searching ads and video conferencing
-        Other functionalities differ based on users type - either student or teacher
-        Teachers can: create ads and edit them, add promotional videos, crate a schedule
-        Students can: book a lesson and  publish a review of past lessons
-        `,
-        technologies: [
-            "Javascript", "Node", "Express", "MySQL", "WebRTC", "AWS EC2 and S3", "STUN and TURN servers", "Nginx"
-        ],
-        photos: [
-            "./photos/videoconference/videoconference.png", "./photos/videoconference/teachers_post.png", "./photos/videoconference/sample_post.png"
-        ],
-        links: ["https://github.com/mwatrak1/video-tutoring", "https://lelo.link"]
-    },
-    {
         name: "Ticketing - microservices",
         description: `Ticketing - microservices - an e-commerce app for selling and buying tickets for any events.
         It allows registered users to easily publish and offer for selling a particular ticket which is then listed for
@@ -168,5 +146,27 @@ const projects = [
             "./photos/recipes/main.png", "./photos/recipes/dessert.png", "./photos/recipes/soup.jpg"
         ],
         links: ["https://github.com/mwatrak1/recipes_newsletter"]
-    }
+    },
+    {
+        name: "Video tutoring",
+        description: `Video tutoring app was created by me and my friend as a part of our engineering thesis.
+        It is an app that connects students and teachers, allows then to communicate schedule a meeting and most importantly
+        participate in an online video call lesson. It focuses on bringing language tutoring to anyone with access to internet 
+        with comfort of not having to leave a house. Website makes it possible to learn any language from native speakers
+        who are fluent in their speech and can pass on practical knowledge and rules of correct pronounciation - its the only
+        way of learning from native language users without having to visit the country
+        
+        Common functionalities include: users profile, public forum, private messaging, searching ads and video conferencing
+        Other functionalities differ based on users type - either student or teacher
+        Teachers can: create ads and edit them, add promotional videos, crate a schedule
+        Students can: book a lesson and  publish a review of past lessons
+        `,
+        technologies: [
+            "Javascript", "Node", "Express", "MySQL", "WebRTC", "AWS EC2 and S3", "STUN and TURN servers", "Nginx"
+        ],
+        photos: [
+            "./photos/videoconference/videoconference.png", "./photos/videoconference/teachers_post.png", "./photos/videoconference/sample_post.png"
+        ],
+        links: ["https://github.com/mwatrak1/video-tutoring", "https://lelo.link"]
+    },
 ]
