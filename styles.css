@@ -1,253 +1,255 @@
 body {
-    width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 footer {
-    background-color:#5271FF;
+  background-color: #5271ff;
 }
 
 #footer-content {
-    height: 5vh;
-    width: 100vw;
-    background-color:#52a2ff;
+  height: 5vh;
+  width: 100vw;
+  background-color: #52a2ff;
 }
 
 #start {
-    width: 100%;
-    height: 100vh;
-    background: url('./photos/backgrounds/welcome.png') no-repeat center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: url('./photos/backgrounds/welcome.png') no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.btn-primary, .btn-primary:hover {
-    background-color: #52a2ff !important;
+.btn-primary,
+.btn-primary:hover {
+  background-color: #52a2ff !important;
 }
 
 .margin-2 {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .centered {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #about {
-    height: 100vh;
-    background-color: #52a2ff;
-    color: white;
+  height: 100vh;
+  background-color: #52a2ff;
+  color: white;
 }
 
 #about-content {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 #about-text-container {
-    height: 70vh;
-    width: 70vw;
+  height: 70vh;
+  width: 70vw;
 }
 
 #about-text-description {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 #contact {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 
 .contact-element {
-    padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 #projects {
-    height: 100vh;
-    color: white;
-    background-color: #52a2ff;
+  height: 100vh;
+  color: white;
+  background-color: #52a2ff;
 }
 
 .projects-border {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 #projects-element {
-    /* background-color: #5271FF; */
-    background-color: #52a2ff;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  /* background-color: #5271FF; */
+  background-color: #52a2ff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 #projects-nav {
-    height: 100vh;
-    width: 20vw;
-    background-color: #52a2ff;
-    border-bottom-right-radius: 50px ;
+  height: 100vh;
+  width: 20vw;
+  background-color: #52a2ff;
+  border-bottom-right-radius: 50px;
 }
 
 #projects-content {
-   width: 80vw;
-   background-color: #5271FF;
-   border-top-left-radius: 50px;
+  width: 80vw;
+  background-color: #5271ff;
+  border-top-left-radius: 50px;
 }
 
 #mobile-nav {
-    display: none;
-    height: 5vh;
-    padding-top: 2%;
+  display: none;
+  height: 5vh;
+  padding-top: 2%;
 }
 
-#mobile-nav button{
-    background-color: #52a2ff;
+#mobile-nav button {
+  background-color: #52a2ff;
 }
 
 .projects-nav-item {
-    height: 10vh;
-    width: 100%;
-    background-color: #38b6ff;
-    position: relative;
-    top: 9%;
-    margin-top: 15%;
+  height: 10vh;
+  width: 100%;
+  background-color: #38b6ff;
+  position: relative;
+  top: 9%;
+  margin-top: 15%;
 }
 
 .project-name-text {
-    text-align: center;
-    padding-top: 8%;
-    padding-bottom: 8%;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 #project-description {
-    padding-top: 3%;
-    height: 45vh;
+  padding-top: 3%;
+  height: 45vh;
+  font-size: 1.1vw;
 }
 
 #project-technologies {
-    height: 10vh;
+  height: 10vh;
 }
 
 .pill-background {
-    background-color: #52a2ff;
-    margin-right: 0.75%;
+  background-color: #52a2ff;
+  margin-right: 0.75%;
 }
 
 #project-gallery {
-    height: 25vh;
-    width: 100%;
+  height: 25vh;
+  width: 100%;
 }
 
-#project-gallery img { 
-    max-width: 40vw;
-    max-height: 22.6vh;
+#project-gallery img {
+  max-width: 25vw;
+  max-height: 22.6vh;
 }
 
 #project-links {
-    height: 15vh;
-    padding-top: 5%;
+  height: 15vh;
+  padding-top: 5%;
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 #navigation-bar {
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 1%;
 }
 
 #logo {
-    font-size: 120%;
+  font-size: 120%;
 }
 
 .navbar-link {
-    color: white;
+  color: white;
 }
 
 #home-welcome-text {
-    padding-top: 5%;
-    margin-left: 10%;
-    margin-right: 5%;
-    color: white;
+  padding-top: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
+  color: white;
 }
 
 #home-buttons {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-    h4 {
-        font-size: 120%;
-        font-style: normal;
-    }
+  h4 {
+    font-size: 120%;
+    font-style: normal;
+  }
 
-    .navbar-link {
-        font-size: 200%;
-    }
+  .navbar-link {
+    font-size: 200%;
+  }
 
-    #home-buttons {
-        padding-top: 10%;
-    }
+  #home-buttons {
+    padding-top: 10%;
+  }
 
-    #home-welcome-text {
-        padding-top: 15%;
-    }
+  #home-welcome-text {
+    padding-top: 15%;
+  }
 
-    #projects-content, #projects-element {
-        margin: 0%;
-        width: 100vw;
-        height: 100vh;
-    }
+  #projects-content,
+  #projects-element {
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+  }
 
-    #about-text-container {
-        width: 90vw;
-        height: 90vh;
-    }
+  #about-text-container {
+    width: 90vw;
+    height: 90vh;
+  }
 
-    #about-content {
-        font-size: 75%;
-    }
+  #about-content {
+    font-size: 75%;
+  }
 
-    #about-content h1 {
-        font-size: 4vw;
-    }
+  #about-content h1 {
+    font-size: 4vw;
+  }
 
-    #about-content h5 {
-        font-size: 3vw;
-    }
+  #about-content h5 {
+    font-size: 3vw;
+  }
 
-    article {
-        font-size: 3.3vw;
-    }
+  article {
+    font-size: 3.3vw;
+  }
 
-    #projects-nav  {
-        display: none;
-    }
+  #projects-nav {
+    display: none;
+  }
 
-    #project-description {
-        height: 70vh;
-    }
+  #project-description {
+    height: 70vh;
+  }
 
-    #project-gallery {
-        display: none;
-    }
+  #project-gallery {
+    display: none;
+  }
 
-    #project-technologies h5{
-        font-size: 4.5vw;
-    }
+  #project-technologies h5 {
+    font-size: 4.5vw;
+  }
 
-    #project-links button {
-        font-size: 3vw;
-    }
+  #project-links button {
+    font-size: 3vw;
+  }
 
-    #mobile-nav {
-        display: block;
-    }
-    
+  #mobile-nav {
+    display: block;
+  }
 }
